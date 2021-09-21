@@ -1,0 +1,26 @@
+﻿<Window x:Class="P2P_Network_Launcher.AddServer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2P_Network_Launcher"
+        mc:Ignorable="d"
+        Title="AddServer" Height="425" Width="610.692">
+    <Grid Margin="0,0,0,320">
+        <Grid Margin="50,53,69,-313">
+            <TextBox x:Name="RemoteAddressTextBox"
+                HorizontalContentAlignment="Center" Text="http://localhost:4000/IP2P_Comm" Margin="40,58,41,245"/>
+            <Label x:Name="label1"
+                BorderThickness="1" Background="#FF14BFA8" HorizontalContentAlignment="Center" Content="Enter Remote machine address, remote port, local port" Height="34" VerticalAlignment="Top"/>
+            <ListBox Grid.Column="0" Margin="10,175,11,28" x:Name="add_server_listbox" />
+            <Button x:Name="ConnectButton_Copy1"
+                HorizontalContentAlignment="Center" Content="Add To List" Margin="75,109,317,192" RenderTransformOrigin="0.741,0.578" Click="Add_Server_Click"/>
+            <Button x:Name="ConnectButton"
+                Click="ConnectButton_Click" HorizontalContentAlignment="Center" Content="Test Connection" Margin="196,109,197,192" RenderTransformOrigin="0.741,0.578"/>
+            <Button x:Name="ConnectButton_Copy"
+                Click="Cancel_Add_Folder_Click" HorizontalContentAlignment="Center" Content="Cancel" Margin="317,109,94,192"/>
+        </Grid>
+        <Button Content="Add A Share Server" HorizontalAlignment="Center" VerticalAlignment="Top" Width="611" Height="48" FontSize="20" FontFamily="Segoe UI Black" Background="#FF14BFA8" RenderTransformOrigin="0.502,0.828"/>
+
+    </Grid>
+</Window>
